@@ -7,7 +7,7 @@ void main() {
   return runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.deepPurple[900],
         body: SafeArea(
           child: MyHomePage(),
         ),
@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Center(
             child: Text(
               scene.getLaQuestion(),
-              style: TextStyle(color: Colors.black, fontSize: 25),
+              style: TextStyle(color: Colors.white70, fontSize: 25),
             ),
           ),
         ),
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             style: ElevatedButton.styleFrom(
               primary: Colors.white, // background (button) color
-              onPrimary: Colors.blueAccent,
+              onPrimary: Colors.deepPurple[900],
             ),
             onPressed: () {
               verification(1);
@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             style: ElevatedButton.styleFrom(
               primary: Colors.white, // background (button) color
-              onPrimary: Colors.blueAccent,
+              onPrimary: Colors.deepPurple[900],
             ),
             onPressed: () {
               verification(2);
