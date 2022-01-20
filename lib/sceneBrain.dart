@@ -27,19 +27,36 @@ class Scene {
         ''),
   ];
 
-  String getQuestionAnswer() {
-    return _questionListe[_numberquestion].suggestion;
+  void QuestionSuivante(NumeroChoix) {
+    if (NumeroChoix == 1 && _numberquestion == 0) {
+      _numberquestion = 2;
+    } else if (NumeroChoix == 2 && _numberquestion == 0) {
+      _numberquestion = 1;
+    } else if (_numberquestion == 1 && NumeroChoix == 1) {
+      _numberquestion = 2;
+    } else if (_numberquestion == 1 && NumeroChoix == 2) {
+      _numberquestion = 3;
+    } else if (_numberquestion == 2 && NumeroChoix == 1) {
+      _numberquestion = 5;
+    } else if (_numberquestion == 2 && NumeroChoix == 2) {
+      _numberquestion = 4;
+    } else if ((_numberquestion == 3 ||
+            _numberquestion == 4 ||
+            _numberquestion == 5) &&
+        NumeroChoix == 1) {
+      _numberquestion = 0;
+    }
   }
 
-  String getQuestionAnswer2() {
-    return _questionListe[_numberquestion].suggestion2;
-  }
-
-  String getQuestionText() {
+  String getLaQuestion() {
     return _questionListe[_numberquestion].questionText;
   }
 
-  void nextQuestion() {
-    if (_numberquestion < _questionListe.length - 1) _numberquestion++;
+  String getLeChoix1() {
+    return _questionListe[_numberquestion].suggestion;
+  }
+
+  String getLeChoix2() {
+    return _questionListe[_numberquestion].suggestion2;
   }
 }

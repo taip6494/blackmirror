@@ -22,6 +22,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  void verification(int monChoix) {
+    setState(() {
+      scene.QuestionSuivante(monChoix);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
@@ -31,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.all(10.0),
           child: Center(
             child: Text(
-              scene.getQuestionText(),
+              scene.getLaQuestion(),
               style: TextStyle(color: Colors.black, fontSize: 25),
             ),
           ),
@@ -42,14 +48,16 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.all(15.0),
           child: ElevatedButton(
             child: Text(
-              scene.getQuestionAnswer(),
+              scene.getLeChoix1(),
               style: TextStyle(fontSize: 20),
             ),
             style: ElevatedButton.styleFrom(
               primary: Colors.white, // background (button) color
               onPrimary: Colors.blueAccent,
             ),
-            onPressed: () {},
+            onPressed: () {
+              verification(1);
+            },
           ),
         ),
       ),
@@ -58,14 +66,16 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.all(15.0),
           child: ElevatedButton(
             child: Text(
-              scene.getQuestionAnswer2(),
+              scene.getLeChoix2(),
               style: TextStyle(fontSize: 20),
             ),
             style: ElevatedButton.styleFrom(
               primary: Colors.white, // background (button) color
               onPrimary: Colors.blueAccent,
             ),
-            onPressed: () {},
+            onPressed: () {
+              verification(2);
+            },
           ),
         ),
       ),
