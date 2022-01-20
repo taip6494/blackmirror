@@ -11,7 +11,7 @@ class Scene {
     Question(
         'Il acquiesce de la tête sans faire attention à la question',
         'Au moins il est honnête. Vous montez ! ',
-        'Au moins il est honnête. Vous montez ! '),
+        'Attends, mais je sais comment changer un pneu voyons !'),
     Question(
         'Lorsqu il commence à conduire, il vous demande d ouvrir la boite à gant. À l’intérieur, vous trouverez un couteau ensanglanté, deux doigts coupés et un CD de T-Matt.',
         'J adore T-Matt, je lui donne le CD.',
