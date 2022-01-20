@@ -77,6 +77,9 @@ flutter:
       - family : Lobster
         fonts:
           - asset: assets/fonts/Lobster-Regular.ttf
+      - family : ShadowsIntoLight
+        fonts:
+          - asset: assets/fonts/ShadowsIntoLight-Regular.ttf
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf

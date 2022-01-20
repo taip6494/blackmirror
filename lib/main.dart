@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: ElevatedButton(
             child: Text(
               scene.getLeChoix1(),
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 20, fontFamily: 'ShadowsIntoLight'),
             ),
             style: ElevatedButton.styleFrom(
               primary: Colors.white, // background (button) color
@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: ElevatedButton(
             child: Text(
               scene.getLeChoix2(),
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 20, fontFamily: 'ShadowsIntoLight'),
             ),
             style: ElevatedButton.styleFrom(
               primary: Colors.white, // background (button) color
