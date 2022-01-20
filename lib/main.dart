@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'sceneBrain.dart';
+
+Scene scene = Scene();
 
 void main() {
   return runApp(
@@ -28,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.all(10.0),
           child: Center(
             child: Text(
-              'La Question',
+              scene.getQuestionText(),
               style: TextStyle(color: Colors.black, fontSize: 25),
             ),
           ),
@@ -39,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.all(15.0),
           child: ElevatedButton(
             child: Text(
-              'Suggestion 1',
+              scene.getQuestionAnswer(),
               style: TextStyle(fontSize: 20),
             ),
             style: ElevatedButton.styleFrom(
@@ -55,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.all(15.0),
           child: ElevatedButton(
             child: Text(
-              'Suggestion 2',
+              scene.getQuestionAnswer2(),
               style: TextStyle(fontSize: 20),
             ),
             style: ElevatedButton.styleFrom(
