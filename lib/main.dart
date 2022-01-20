@@ -38,7 +38,8 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Center(
             child: Text(
               scene.getLaQuestion(),
-              style: TextStyle(color: Colors.white70, fontSize: 25),
+              style: TextStyle(
+                  color: Colors.white70, fontFamily: 'Lobster', fontSize: 25),
             ),
           ),
         ),
